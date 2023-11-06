@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./responsive.css);
+
+@font-face {
+  font-family: Grotesk;
+  src: url(./assets/Fonts/OTF/ClashGrotesk-Regular.otf);
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+li {
+  color: white;
+}
+
+h1 {
+  font-family: Grotesk;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #FFF;
+  font-family: 'circular';
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 100 !important;
+  line-height: 20px !important;
+}
+
+.para {
+  color: #FFF;
+  font-family: 'circular';
+  font-size: 18px !important;
+}
+
+
+.mangoname {
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.mangocolor {
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mangoborder {
+  border-bottom: 5px solid #6500FF;
+  /* background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%)); */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+body {
+  /* font-family: myFont !important; */
+  color: rgb(var(--foreground-rgb));
+  background: black;
+  /* background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
+
+
+
+body::-webkit-scrollbar-track {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+}
+
+
+.active {
+  display: block !important;
+}
+
+.bg-hero {
+  /* background-image: url('./assets/images/hero-bg.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-web3 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.445)),
+    url('./assets/images/light-left.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-blockchain {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.445)),
+    url('./assets/images/light-right.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-services {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.445)),
+    url('./assets/images/services-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.bg-roadmap {
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.445)),
+    url('./assets/images/services-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.bg-subscribe {
+  border-radius: 16px;
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+}
+
+.button {
+  border-radius: 8px;
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+  padding: 9px 21px;
+}
+
+.addframe {
+  border-radius: 32px !important;
+  border-bottom: 8px solid var(--g, #EB00FF) !important;
+  /* background: #181818 !important; */
+  background: linear-gradient(to bottom, #4FC3F7, #1565C0)
+}
+
+.frameplus {
+  background: var(--Gradient, linear-gradient(81deg, #5337FF 0%, #B337FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Grotesk;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.g2 {
+  background: var(--Gradient, linear-gradient(81deg, #37c0ff 0%, #376cff 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Grotesk;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.g3 {
+  background: var(--Gradient, linear-gradient(81deg, #4eff37 0%, #029142 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Grotesk;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.g4 {
+  background: var(--Gradient, linear-gradient(81deg, #ff37ff 0%, #690291 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Grotesk;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.frametext {
+  color: #FFF;
+  font-family: Grotesk;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  /* 116.667% */
+  text-transform: capitalize;
+}
+
+.foempara {
+  color: #FFF;
+  font-family: 'circular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 10;
+  line-height: 28px;
+  /* 155.556% */
+  text-transform: capitalize;
+}
+
+
+.servicecard {
+  border-radius: 8px;
+  border-top: 4px solid var(--g, #EB00FF);
+  background: #050505;
+
+  /* Shadow */
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+}
+
+.servicetext {
+  color: #FFF;
+  font-family: Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  /* 133.333% */
+  text-transform: capitalize;
+}
+
+.servicebutton {
+  background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmaptext {
+  color: #FFF;
+  font-family: Grotesk;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 45px; */
+
+  /* 112.5% */
+  text-transform: capitalize;
+}
+
+.roadmapname {
+  /* background: var(--g, linear-gradient(68deg, #EB00FF 3.6%, #00F0FF 100%)); */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: white;
+  font-family: Grotesk;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 45px; */
+  text-transform: capitalize;
+}
+
+.roadmappara {
+  color: var(--Light, #FFF);
+  text-align: center;
+  font-family: Grotesk;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 40px; */
+  /* 166.667% */
+}
+
+.rdimg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -26px;
+}
+
+.partnerscard {
+  background: linear-gradient(68deg, rgb(235 0 255 / 20%) 3.6%, rgb(0 240 255 / 12%) 100%);
+  border-radius: 10px;
+}
+
+.footerPara {
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  line-height: normal !important;
+  margin-top: 30px;
+}
+
+.footerqr {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.footerli {
+  font-weight: 100 !important;
+  font-size: smaller !important;
+}
